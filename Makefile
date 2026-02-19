@@ -1,6 +1,8 @@
-.PHONY: sanity
+install:
+	pip install -r requirements.txt
+
+run:
+	streamlit run app.py
 
 sanity:
-	@echo "ERROR: You must implement 'make sanity' for your stack."
-	@echo "It must generate artifacts/sanity_output.json"
-	@exit 1
+	python scripts/sanity_check.py
