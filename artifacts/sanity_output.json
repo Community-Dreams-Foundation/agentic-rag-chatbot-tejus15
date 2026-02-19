@@ -1,0 +1,37 @@
+{
+  "implemented_features": [
+    "RAG",
+    "MEMORY"
+  ],
+  "qa": [
+    {
+      "question": "What is the budget for Project Omega?",
+      "answer": "The budget for Project Omega is $50,000 [Source: temp_sanity_test.txt].",
+      "citations": [
+        {
+          "source": "temp_sanity_test.txt",
+          "locator": "0",
+          "snippet": "Project Omega has a strict budget of $50,000 and i"
+        },
+        {
+          "source": "temp_project_info.txt",
+          "locator": "0",
+          "snippet": "Project Alpha is a new initiative to launch a Mars"
+        },
+        {
+          "source": "temp_sanity_test.txt",
+          "locator": "0",
+          "snippet": "The secret code for the hackathon is 12345. The ju"
+        }
+      ]
+    }
+  ],
+  "demo": {
+    "memory_writes": [
+      {
+        "target": "USER",
+        "summary": "User identified as Judge Dredd."
+      }
+    ]
+  }
+}
