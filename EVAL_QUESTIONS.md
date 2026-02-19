@@ -18,7 +18,7 @@ After uploading a document, test:<br/>
 
 ***Expected Output:<br/>***
 
- ****Answer:**** "$50 million".<br/>
+ ****Answer:**** "$500 million".<br/>
  ****Citation:**** References project_info.txt.<br/>
  
 **Test 3: Specific Detail**<br/>
