@@ -92,7 +92,7 @@ def query_agent(query):
     4. Do not make up facts to fit the document.
     
     MEMORY RULES:
-    - If the user states a preference/role (e.g., "I am a Data Scientist"), save it to User Memory.
+    - If the user states a role (e.g., "I am a Data Scientist"), save it to User Memory.
     - If you find an organizational fact (e.g., "Budget is $50k"), save it to Company Memory.
     
     CONTEXT:
@@ -138,4 +138,5 @@ def query_agent(query):
             final_answer = "I've noted that down in memory."
 
     return final_answer, context_docs, memory_status
+
 
