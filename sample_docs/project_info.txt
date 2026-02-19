@@ -1,0 +1,1 @@
+Project Alpha is a new initiative to launch a Mars rover by Q4 2025. The budget is $500 million. The main programming language used is Python.
