@@ -255,43 +255,44 @@ An intelligent document assistant that doesn't just read your files—it learns 
 ## Quick Start
 Follow these exact steps to run the application locally.
 
-**1. Clone and Enter Repository**
+**1. Clone and Enter Repository** <br/>
 git clone https://github.com/Community-Dreams-Foundation/agentic-rag-chatbot-tejus15.git <br/>
-cd <your-repo-folder>
+cd cd agentic-rag-chatbot-tejus15
 
-**2. Install Dependencies**
+
+**2. Install Dependencies**<br/>
 pip install -r requirements.txt
 
-**3. Configure Environment** 
+**3. Configure Environment** <br/>
 Create a .env file in the root directory and add your OpenAI API Key:<br/>
 OPENAI_API_KEY=sk-proj-xxxx...
 
-**4. Run the App**
+**4. Run the App**<br/>
 Launch the UI:<br/>
 streamlit run app.py
 
-**5. Run Sanity Check (For Judges)**
+**5. Run Sanity Check (For Judges)**<br/>
 To verify the system works without opening the UI, run the automated test suite:<br/>
 
-***Option A: Using Make (Recommended)***
+***Option A: Using Make (Recommended)***<br/>
 make sanity
 
 <br/>This will generate a success report at artifacts/sanity_output.json.
 
 ## Key Features
-**1. RAG (Retrieval Augmented Generation)**
-***Upload:*** Supports .txt and .pdf files.
-***Ingest:*** Splits documents into chunks and embeds them using OpenAI Embeddings.
-***Retrieve:*** Uses ChromaDB (Local Vector Store) to find relevant context for your questions.
-***Cite:*** Every answer provides sources to the exact text chunk used.
+**1. RAG (Retrieval Augmented Generation)**<br/>
+***Upload:*** Supports .txt and .pdf files.<br/>
+***Ingest:*** Splits documents into chunks and embeds them using OpenAI Embeddings.<br/>
+***Retrieve:*** Uses ChromaDB (Local Vector Store) to find relevant context for your questions.<br/>
+***Cite:*** Every answer provides sources to the exact text chunk used.<br/>
 
-**2. Agentic Memory (The "Brain")**
-Unlike standard RAG bots that forget you when you close the tab, this agent possesses Persistent Memory.
+**2. Agentic Memory (The "Brain")**<br/>
+Unlike standard RAG bots that forget you when you close the tab, this agent possesses Persistent Memory.<br/>
 
-***User Memory:*** Learns your name, role, and preferences (e.g., "I am a CTO," "Format answers in JSON").
-***Company Memory:*** Learns organizational facts (e.g., "Budget is $50k," "Meetings are on Fridays").
-***Storage:*** Memories are stored in USER_MEMORY.md and COMPANY_MEMORY.md, allowing them to survive server restarts.
+***User Memory:*** Learns your name, role, and preferences (e.g., "I am a CTO," "Format answers in JSON").<br/>
+***Company Memory:*** Learns organizational facts (e.g., "Budget is $50k," "Meetings are on Fridays").<br/>
+***Storage:*** Memories are stored in USER_MEMORY.md and COMPANY_MEMORY.md, allowing them to survive server restarts.<br/>
 
-## Suggested Evaluation Prompts
+## Suggested Evaluation Prompts<br/>
 
 See: `EVAL_QUESTIONS.md`
