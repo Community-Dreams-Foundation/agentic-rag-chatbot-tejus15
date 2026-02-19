@@ -18,7 +18,8 @@ You may implement one feature or multiple. Partial implementations are acceptabl
 
 ---
 ## 2) Video Walkthrough Link (Required)
-
+Video Link:<br/>
+https://youtu.be/wkGH1lzC32I?si=r3xwJyGAleTOeiEq
 ---
 
 ## 3) Quick Start
