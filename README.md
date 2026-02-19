@@ -239,19 +239,58 @@ These are optional enhancements. They are not required, but can earn bonus point
 
 ---
 
-## Quick Start (YOU MUST FILL THIS IN)
+# Agentic RAG with Persistent Memory
+An intelligent document assistant that doesn't just read your files—it learns about **you** and **your company** over time.
 
-Provide exact commands a judge can run.
+## Participant Info
+*   **Name:** TEJUS SANJAY SHARMA
+*   **GitHub Username:** tejus15
 
-Example (replace with your real commands):
-
-```text
-# install dependencies
-# run the app
-# open UI or run CLI
-```
+## Video Walkthrough
+**[PASTE YOUR YOUTUBE/LOOM LINK HERE]**
+*(e.g., https://www.youtube.com/watch?v=...)*
 
 ---
+
+## Quick Start
+Follow these exact steps to run the application locally.
+
+**1. Clone and Enter Repository**
+git clone https://github.com/Community-Dreams-Foundation/agentic-rag-chatbot-tejus15.git <br/>
+cd <your-repo-folder>
+
+**2. Install Dependencies**
+pip install -r requirements.txt
+
+**3. Configure Environment** 
+Create a .env file in the root directory and add your OpenAI API Key:<br/>
+OPENAI_API_KEY=sk-proj-xxxx...
+
+**4. Run the App**
+Launch the UI:<br/>
+streamlit run app.py
+
+**5. Run Sanity Check (For Judges)**
+To verify the system works without opening the UI, run the automated test suite:<br/>
+
+***Option A: Using Make (Recommended)***
+make sanity
+
+<br/>This will generate a success report at artifacts/sanity_output.json.
+
+## Key Features
+**1. RAG (Retrieval Augmented Generation)**
+***Upload:*** Supports .txt and .pdf files.
+***Ingest:*** Splits documents into chunks and embeds them using OpenAI Embeddings.
+***Retrieve:*** Uses ChromaDB (Local Vector Store) to find relevant context for your questions.
+***Cite:*** Every answer provides sources to the exact text chunk used.
+
+**2. Agentic Memory (The "Brain")**
+Unlike standard RAG bots that forget you when you close the tab, this agent possesses Persistent Memory.
+
+***User Memory:*** Learns your name, role, and preferences (e.g., "I am a CTO," "Format answers in JSON").
+***Company Memory:*** Learns organizational facts (e.g., "Budget is $50k," "Meetings are on Fridays").
+***Storage:*** Memories are stored in USER_MEMORY.md and COMPANY_MEMORY.md, allowing them to survive server restarts.
 
 ## Suggested Evaluation Prompts
 
