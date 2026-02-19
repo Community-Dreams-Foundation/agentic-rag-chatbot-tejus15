@@ -84,10 +84,12 @@ def query_agent(query):
 
     # Construct System Prompt
     system_prompt = f"""
-    You are a helpful assistant.
-    
-    1. Answer the user's question based ONLY on the following Context.
-    2. CITATIONS: Always cite your sources using [Source: filename].
+    You are a helpful assistant. Use the provided context to answer the question if it is relevant.
+    RULES:
+    1. If the answer is found in the context, explicitly cite the source document using [Source: filename]..
+    2. If the question is General Knowledge (e.g., "Capital of France") or NOT in the context, answer from your own knowledge.
+    3. CRITICAL: If you answer from your own knowledge, DO NOT cite any sources.
+    4. Do not make up facts to fit the document.
     
     MEMORY RULES:
     - If the user states a preference/role (e.g., "I am a Data Scientist"), save it to User Memory.
@@ -136,3 +138,4 @@ def query_agent(query):
             final_answer = "I've noted that down in memory."
 
     return final_answer, context_docs, memory_status
+
