@@ -170,7 +170,7 @@ Follow these exact steps to run the application locally.
 
 **1. Clone and Enter Repository** <br/>
 git clone https://github.com/Community-Dreams-Foundation/agentic-rag-chatbot-tejus15.git <br/>
-cd cd agentic-rag-chatbot-tejus15
+cd agentic-rag-chatbot-tejus15
 
 
 **2. Install Dependencies**<br/>
