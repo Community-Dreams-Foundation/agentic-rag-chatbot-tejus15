@@ -44,13 +44,13 @@ def setup():
                 file.write("# Initialized Memory\n")
 
 def run_sanity_logic():
-    print("🚀 Starting Sanity Check...")
+    print("Starting Sanity Check...")
 
     # 1. Check for API Key
     # If missing, we generate a STRUCTURAL MOCK to satisfy the judge's format check
     # without crashing on OpenAI calls.
     if not os.getenv("OPENAI_API_KEY"):
-        print("⚠️  OPENAI_API_KEY not found. Generating structural mock data.")
+        print("OPENAI_API_KEY not found. Generating structural mock data.")
         return generate_structural_mock()
 
     try:
@@ -115,7 +115,7 @@ def run_sanity_logic():
         return output_data
 
     except Exception as e:
-        print(f"❌ Error running logic: {e}")
+        print(f"Error running logic: {e}")
         print("Fallback to structural mock to allow pipeline pass.")
         return generate_structural_mock()
 
@@ -156,7 +156,8 @@ def main():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         json.dump(data, f, indent=2)
     
-    print(f"✅ Sanity check complete. Artifacts saved to {OUTPUT_FILE}")
+    print(f"Sanity check complete. Artifacts saved to {OUTPUT_FILE}")
 
 if __name__ == "__main__":
     main()
+
