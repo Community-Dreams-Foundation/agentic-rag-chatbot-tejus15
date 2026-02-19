@@ -11,6 +11,42 @@ You may implement one feature or multiple. Partial implementations are acceptabl
 
 ---
 
+## 1) Participant Info (Required)
+- Full Name: TEJUS SANJAY SHARMA
+- Email: tejus98sharma@gmail.com
+- GitHub Username:tejus15
+
+---
+## 2) Video Walkthrough Link (Required)
+
+---
+
+## 3) Quick Start
+Follow these exact steps to run the application locally.
+
+**1. Clone and Enter Repository** <br/>
+git clone https://github.com/Community-Dreams-Foundation/agentic-rag-chatbot-tejus15.git <br/>
+cd agentic-rag-chatbot-tejus15
+
+**2. Install Dependencies**<br/>
+pip install -r requirements.txt
+
+**3. Configure Environment** <br/>
+Create a .env file in the root directory and add your OpenAI API Key:<br/>
+OPENAI_API_KEY=sk-proj-xxxx...
+
+**4. Run the App**<br/>
+Launch the UI:<br/>
+streamlit run app.py
+
+**5. Run Sanity Check (For Judges)<br/>**
+To verify the system works without opening the UI, run the automated test suite:<br/>
+
+***Option A: Using Make (Recommended)<br/>***
+make sanity
+
+<br/>This will generate a success report at artifacts/sanity_output.json.
+
 ## FEATURES
 
 ### Feature A - File Upload + RAG (Core)
@@ -66,46 +102,3 @@ The Chatbot should:
 - Return a clear explanation of findings
 
 ---
-
-## Participant Info (Required)
-- Full Name: TEJUS SANJAY SHARMA
-- Email: tejus98sharma@gmail.com
-- GitHub Username:tejus15
-
----
-### 3) Video Walkthrough Link (Required)
-
-Add your video link here:
-
-## Video Walkthrough
-
-PASTE YOUR LINK HERE
-
----
-
-## Quick Start
-Follow these exact steps to run the application locally.
-
-**1. Clone and Enter Repository** <br/>
-git clone https://github.com/Community-Dreams-Foundation/agentic-rag-chatbot-tejus15.git <br/>
-cd agentic-rag-chatbot-tejus15
-
-**2. Install Dependencies**<br/>
-pip install -r requirements.txt
-
-**3. Configure Environment** <br/>
-Create a .env file in the root directory and add your OpenAI API Key:<br/>
-OPENAI_API_KEY=sk-proj-xxxx...
-
-**4. Run the App**<br/>
-Launch the UI:<br/>
-streamlit run app.py
-
-**5. Run Sanity Check (For Judges)**<br/>
-To verify the system works without opening the UI, run the automated test suite:<br/>
-
-***Option A: Using Make (Recommended)***<br/>
-make sanity
-
-<br/>This will generate a success report at artifacts/sanity_output.json.
-
