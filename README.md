@@ -11,13 +11,6 @@ You may implement one feature or multiple. Partial implementations are acceptabl
 
 ---
 
-## Participant Info (Required)
-- Full Name: TEJUS SANJAY SHARMA
-- Email: tejus98sharma@gmail.com
-- GitHub Username:tejus15
-
----
-
 ## FEATURES
 
 ### Feature A - File Upload + RAG (Core)
@@ -72,41 +65,14 @@ The Chatbot should:
 - Compute basic analytics (rolling averages, volatility, missingness checks, anomaly flags, etc.)
 - Return a clear explanation of findings
 
-We care about **safe execution boundaries + clean tool interface**, not perfect data science.
-
 ---
 
+## Participant Info (Required)
+- Full Name: TEJUS SANJAY SHARMA
+- Email: tejus98sharma@gmail.com
+- GitHub Username:tejus15
+
 ---
-
-## Submission Rules (Important)
-
-### 1) Any language / any stack
-You may use any language, framework, model, and any vector DB (FAISS/Chroma/pgvector/etc.).
-
-### 2) One universal judge command (Required)
-Judges must be able to run:
-
-```bash
-make sanity
-```
-
-Your `make sanity` must:
-
-* Run a minimal end-to-end flow (based on what you implemented)
-* Produce this file:
-
-```text
-artifacts/sanity_output.json
-```
-
-Judges may also run:
-
-```bash
-bash scripts/sanity_check.sh
-```
-
-(This script runs `make sanity` and validates the output format.)
-
 ### 3) Video Walkthrough Link (Required)
 
 Add your video link here:
@@ -114,54 +80,6 @@ Add your video link here:
 ## Video Walkthrough
 
 PASTE YOUR LINK HERE
-
-## 4) Important
-Submissions missing the Participant Info block may be deprioritized during review.
-
----
-
-## GitHub Classroom Submission (Required)
-
-### Step 1 — Create your submission repo
-1) Open the **GitHub Classroom invite link** provided to you after registration.
-2) Accept the assignment.
-3) GitHub Classroom will automatically create a **new repository under your GitHub account**.
-   - This new repo is your official submission repo.
-
-Important:
-- Do **not** submit work in the **agentic-rag-chatbot-template** repository. That is the starter/template repo.
-- You must complete your work in the **repository created for you by GitHub Classroom** after you accept the assignment link.
-- Only the GitHub Classroom-created repo will be evaluated.
-
-### Step 2 — Work in your submission repo
-Clone your Classroom repo and push your commits as usual.
-
-### Step 3 — What you must include before the deadline
-In your Classroom repo:
-- Fill in the **Quick Start** section in `README.md` (exact run commands)
-- Paste your **Video Walkthrough** link in `README.md`
-- Ensure `make sanity` works and generates:
-  - `artifacts/sanity_output.json`
-- Ensure your app writes memory to:
-  - `USER_MEMORY.md`
-  - `COMPANY_MEMORY.md`
-
-### Step 4 — Final submission
-Your submission is automatic once your code is pushed to your Classroom repo.
-No separate zip upload is required unless explicitly instructed.
-
----
-
-# Agentic RAG with Persistent Memory
-An intelligent document assistant that doesn't just read your files—it learns about **you** and **your company** over time.
-
-## Participant Info
-*   **Name:** TEJUS SANJAY SHARMA
-*   **GitHub Username:** tejus15
-
-## Video Walkthrough
-**[PASTE YOUR YOUTUBE/LOOM LINK HERE]**
-*(e.g., https://www.youtube.com/watch?v=...)*
 
 ---
 
@@ -171,7 +89,6 @@ Follow these exact steps to run the application locally.
 **1. Clone and Enter Repository** <br/>
 git clone https://github.com/Community-Dreams-Foundation/agentic-rag-chatbot-tejus15.git <br/>
 cd agentic-rag-chatbot-tejus15
-
 
 **2. Install Dependencies**<br/>
 pip install -r requirements.txt
@@ -192,20 +109,3 @@ make sanity
 
 <br/>This will generate a success report at artifacts/sanity_output.json.
 
-## Key Features
-**1. RAG (Retrieval Augmented Generation)**<br/>
-***Upload:*** Supports .txt and .pdf files.<br/>
-***Ingest:*** Splits documents into chunks and embeds them using OpenAI Embeddings.<br/>
-***Retrieve:*** Uses ChromaDB (Local Vector Store) to find relevant context for your questions.<br/>
-***Cite:*** Every answer provides sources to the exact text chunk used.<br/>
-
-**2. Agentic Memory (The "Brain")**<br/>
-Unlike standard RAG bots that forget you when you close the tab, this agent possesses Persistent Memory.<br/>
-
-***User Memory:*** Learns your name, role, and preferences (e.g., "I am a CTO," "Format answers in JSON").<br/>
-***Company Memory:*** Learns organizational facts (e.g., "Budget is $50k," "Meetings are on Fridays").<br/>
-***Storage:*** Memories are stored in USER_MEMORY.md and COMPANY_MEMORY.md, allowing them to survive server restarts.<br/>
-
-## Suggested Evaluation Prompts<br/>
-
-See: `EVAL_QUESTIONS.md`
